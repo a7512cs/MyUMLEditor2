@@ -373,16 +373,16 @@ void LineObject::ZZLine_TopDown(CDC* pDC)
 }
 void LineObject::ZZLine_LeftRight(CDC* pDC)
 {
-	CPoint pt;
-	pt.SetPoint((StartPort->GetPoint().x + EndPort->GetPoint().x) / 2,
-		StartPort->GetPoint().y);
-	pDC->LineTo(pt);
-	pt.SetPoint((StartPort->GetPoint().x + EndPort->GetPoint().x) / 2,
-		EndPort->GetPoint().y);
-	pDC->LineTo(pt);
-	pt.SetPoint(EndPort->GetPoint().x,
-		EndPort->GetPoint().y);
-	pDC->LineTo(pt);
+    CPoint pt;
+    pt.SetPoint((StartPort->GetPoint().x + EndPort->GetPoint().x) / 2,
+        StartPort->GetPoint().y);
+    pDC->LineTo(pt);
+    pt.SetPoint((StartPort->GetPoint().x + EndPort->GetPoint().x) / 2,
+        EndPort->GetPoint().y);
+    pDC->LineTo(pt);
+    pt.SetPoint(EndPort->GetPoint().x,
+        EndPort->GetPoint().y);
+    pDC->LineTo(pt);
 }
 
 AssociationLine::AssociationLine(Shape* sp1, Shape*sp2)
