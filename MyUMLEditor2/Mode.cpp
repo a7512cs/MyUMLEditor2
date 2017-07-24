@@ -13,7 +13,7 @@ void Mode::GetSelectingNormalizationPt(CPoint &LeftTopPt, CPoint &RigBotPt)
 	if (LeftTopPt.x > RigBotPt.x)
 	{
 		int t = LeftTopPt.x;
-		LeftTopPt.x = RigBotPt.x;
+		LeftTopPt.x = RigBotPt.x; 
 		RigBotPt.x = t;
 	}
 
