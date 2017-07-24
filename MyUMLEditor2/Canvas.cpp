@@ -164,13 +164,13 @@ void CCanvas::DrawAll(CDC* pDC)//畫出全部物件
 }
 void CCanvas::CleanAllCan(CDC* pDC)
 {
-	CPoint p1(0, 0), p2(CanvasRc.Width(), CanvasRc.Height());
-	CRect rect(p1, p2);
-	CPen pen(PS_NULL, 1, RGB(0, 0, 0));//創立一個畫筆
-	CBrush BrushWhite(RGB(255, 255, 255));//填滿白色畫刷
-	pDC->SelectObject(&pen);
-	pDC->SelectObject(&BrushWhite);//白色實心
-	pDC->Rectangle(rect);
+    CPoint p1(0, 0), p2(CanvasRc.Width(), CanvasRc.Height());
+    CRect rect(p1, p2);
+    CPen pen(PS_NULL, 1, RGB(0, 0, 0));//創立一個畫筆
+    CBrush BrushWhite(RGB(255, 255, 255));//填滿白色畫刷
+    pDC->SelectObject(&pen);
+    pDC->SelectObject(&BrushWhite);//白色實心
+    pDC->Rectangle(rect);
 }
 Shape* CCanvas::InWhichShape(CPoint point)
 {
