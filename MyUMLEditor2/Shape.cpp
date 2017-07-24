@@ -360,7 +360,7 @@ void LineObject::ChangeName(CString st)
 }
 void LineObject::ZZLine_TopDown(CDC* pDC)
 {
-	CPoint pt;
+	CPoint pt; 
 	pt.SetPoint(StartPort->GetPoint().x,
 		(StartPort->GetPoint().y + EndPort->GetPoint().y) / 2);
 	pDC->LineTo(pt);
